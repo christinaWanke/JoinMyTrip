@@ -1,0 +1,145 @@
+body{
+    font-family: Montserrat,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    text-align: center;
+    color: #373a3c;
+    background-color: #f5f5f5;
+}
+
+/********* TEXT *********/
+h1{
+    font-weight: normal;
+}
+
+h2{
+    font-weight: 400;
+}
+
+p{
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.line-height{
+    padding-top: 1em;
+    line-height: 0.1em;
+}
+
+/********* CONTAINER *********/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CONTAINER WHITE */
+.container-white{
+    box-shadow: 1px 1px 1px 1px rgba(227, 227, 227, 0.38);
+    width: 70%;
+    border-radius: 1em;
+    padding-bottom: 3em;
+    background-image: linear-gradient(to bottom,#f5f5f5,#fcfcfc);
+}
+
+/* DESCRIPTION CONTAINERS */
+#container-descriptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* MOONRISE */
+#rect-left{
+    background-image: linear-gradient(to right,#2f53ff,#8c1aec);
+    border-radius: 15px 70px 15px 50px;
+}
+
+#rect-left > p{
+    margin-left: 3em;
+    margin-right: 5em;
+}
+
+/* SUNSET */
+#rect-right{
+    background-image: linear-gradient(to right,#ff9761,#ff424e);
+    border-radius: 70px 15px 50px 15px;
+}
+
+#rect-right > p{
+    margin-left: 5em;
+    margin-right: 3em;
+}
+
+/* Moonrise & Sunset */
+#rect-left,#rect-right{
+    color: #fcfcfc;
+    text-align: center;
+    width: 49.5%;
+    padding-bottom: 1.5em;
+
+}
+
+/********* IMAGES *********/
+img{
+    margin-left: -0.21em;
+    margin-right: 0.55em;
+}
+
+#images{
+    margin-left: 4.5em;
+    margin-top: -3.2em;
+}
+
+/********* LINK *********/
+a{
+    text-transform: uppercase;
+    color: #2cacd6;
+    font-size: 14px;
+}
+
+
+/********* RESPONSIVE *********/
+@media (max-width: 440px) {
+    .container-white{
+        justify-content: end;
+        width: 90%;
+    }
+
+    #tripleader{
+        position: absolute;
+        right: 1.25em;
+        bottom: 30.48em;
+    }
+
+    #tripmates{
+        position: absolute;
+        left: 2.01em;
+        bottom: 30.48em;
+    }
+
+    .content{
+        margin-top: 5em;
+    }
+
+    #rect-left{
+        background-image: linear-gradient(to right,#2f53ff,#8c1aec);
+        border-radius: 15px 70px 0px 0px;
+    }
+
+    #rect-right{
+        background-image: linear-gradient(to right,#ff9761,#ff424e);
+        border-radius: 0px 0px 15px 50px;
+    }
+
+    #rect-left, #rect-right{
+        color: #fcfcfc;
+        text-align: center;
+        margin: 1%;
+        width: 100%;
+        padding-bottom: 1.5em;
+    }
+}
